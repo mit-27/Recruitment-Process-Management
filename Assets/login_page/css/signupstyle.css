@@ -1,0 +1,505 @@
+body {
+    overflow-x: hidden;
+}
+/*---------Slider---------*/
+.slider {
+    width: 100%;
+}
+
+.carousel-indicators li {
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+}
+
+.carousel-inner {
+    width: 100%;
+}
+
+.carousel-inner center img {
+    width: 70%;
+    height: 50%;
+}
+
+.carousel-inner .carousel-item .carousel-caption h1 {
+    font-size: 5vw;
+}
+
+.carousel-inner .carousel-item .carousel-caption h4 {
+    font-size: 1.5vw;
+    width: 100%;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.65);
+}
+/*------ Form Section (Greetings) ------*/
+.section1 {
+    overflow-y: hidden;
+}
+
+.greetings h3 {
+    font-size: 3.5vw;
+    font-weight: 500;
+    /* font-family: mtaileb; */
+}
+
+.greetings h4 {
+    font-size: 1.5vw;
+    font-weight: 450;
+    color: rgba(42, 41, 41, 0.57);
+}
+
+/*------ Form Details ------*/
+.input-group #userid,
+.input-group #usermail,
+.input-group #userpass {
+    border: none;
+    background: #E4F1F9;
+    outline: none;
+    box-shadow: 0 0.15rem 0.25rem rgba(0, 0, 0, 0.6);
+}
+
+.input-group #userid::placeholder,
+.input-group #usermail::placeholder,
+.input-group #userpass::placeholder {
+    color: #7A7F82;
+    font-size: 1.2vw;
+}
+
+.sbtn {
+    border: none;
+    outline: none;
+    font-size: 1.5vw;
+    font-weight: 500;
+    background: rgba(240, 103, 103, .6) !important;
+    box-shadow: 0 0.15rem 0.25rem rgba(0, 0, 0, 0.6);
+    transition: transform 1s ease-in;
+    transform-origin: center;
+}
+
+.sbtn:hover {
+    font-size: 1.7vw;
+    font-weight: 700;
+    background: rgba(240, 103, 103, .7) !important;
+}
+
+.decOR {
+    position: relative;
+    text-align: center;
+    font-size: 2vw;
+    background: #E4F1F9;
+}
+
+.decOR::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 13vw;
+    height: 0.5vmin;
+    background: #707070;
+    border-radius: 0.2vmin;
+    left: 0;
+    top: 50%;
+}
+
+.decOR::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 13vw;
+    height: 0.5vmin;
+    background: #707070;
+    border-radius: 0.2vmin;
+    right: 0;
+    top: 50%;
+}
+
+.glbtn {
+    position: relative;
+    background: #fefefe;
+    border: none;
+    transform: scale(0.9);
+    box-shadow: 0 0.15rem 0.25rem rgba(0, 0, 0, 0.6);
+    outline: none;
+    transition: transform 1s ease-in;
+}
+
+.glbtn:hover {
+    transform: scale(1);
+    background: #CC3333;
+    box-shadow: 0 0.35rem 0.45rem rgba(0, 0, 0, 0.8);
+}
+
+.glbtn:hover i,
+.glbtn:hover a {
+    color: snow;
+    font-weight: 700;
+    text-decoration: none !important;
+}
+
+
+.glbtn i {
+    position: absolute;
+    font-size: 3vw;
+    color: #CC3333;
+    width: 3vw;
+    height: 3vw;
+    display: block;
+}
+
+.glbtn a {
+    position: relative;
+    display: block;
+    justify-content: right;
+    font-size: 1.8vw;
+    font-weight: 700;
+    outline: none;
+    color: rgba(204, 51, 51, 0.86);
+}
+
+.loginSection {
+    position: relative;
+}
+
+.loginSection p {
+    position: relative;
+    text-align: left;
+    font-size: 1.2vw;
+    color: rgba(56, 59, 60, .6);
+}
+
+.loginSection p a {
+    position: relative;
+    text-align: center;
+    font-size: 2vw;
+    font-weight: 500;
+    text-decoration: none;
+    justify-content: center;
+    color: #7D8388 !important;
+    transition: transform 1s ease-in;
+}
+
+.loginSection p a:hover {
+    color: rgba(204, 103, 103, 0.80) !important;
+    font-size: 2.2vw;
+}
+
+/* ------ Media Querry (For Size 2560px) ------ */
+@media only screen and (max-width: 2561px){
+    .carousel-inner center img {
+        width: 60%;
+        height: 40%;
+    }
+    .carousel-inner .carousel-item .carousel-caption h1 {
+        font-size: 3vw;
+    }
+    .carousel-inner .carousel-item .carousel-caption h4 {
+        font-size: 1.5vw;
+    }
+    .greetings h3 {
+        font-size: 2vw;
+    }
+    .greetings h4 {
+        font-size: 1vw;
+    }
+    .input-group #userid,
+    .input-group #usermail,
+    .input-group #userpass {
+        margin-top: 1.5%;
+        padding: 5% !important;
+    }
+    .sbtn{
+        margin-top: 1.5%;
+        padding: 1.8%;
+    }
+    .glbtn i {
+        font-size: 2.8vw;
+    }
+    .glbtn a {
+        font-size: 1.5vw;
+        font-weight: 700;
+    }
+}
+
+/* ------ Media Querry (For Size 1440px)------ */
+@media only screen and (max-width: 1441px) {
+    .carousel-inner center img {
+        width: 50%;
+        height: 30%;
+    }
+
+    .carousel-inner .carousel-item .carousel-caption h1 {
+        font-size: 2.8vw;
+    }
+
+    .carousel-inner .carousel-item .carousel-caption h4 {
+        font-size: 1.3vw;
+    }
+
+    .greetings h3 {
+        font-size: 2vw;
+    }
+
+    .greetings h4 {
+        font-size: 1vw;
+    }
+
+    .input-group #userid,
+    .input-group #usermail,
+    .input-group #userpass {
+        margin: 0 auto !important;
+        padding: 4% !important;
+    }
+
+    .sbtn {
+        margin-top: 1.5%;
+        margin-bottom: 0 !important;
+        padding: 1.3%;
+    }
+
+    .decOR,.decOR::after,.decOR::before{
+        font-size: 2vw;
+        margin-top: 1% !important;
+    }
+
+    .glbtn{
+        margin-top: 0 !important;
+    }
+
+    .glbtn i {
+        font-size: 2.3vw;
+    }
+
+    .glbtn a {
+        font-size: 1.1vw;
+        font-weight: 700;
+    }
+
+    .loginSection{
+        margin-top: 5% !important;
+    }
+
+    .loginSection p {
+        font-size: 1.1vw;
+        text-align: center;
+    }
+
+    .loginSection p a {
+        font-size: 1.5vw;
+    }
+
+    .loginSection p a:hover {
+        font-size: 1.8vw;
+    }
+}
+
+/* ------ Media Querry (For Size 1024px)------ */
+@media only screen and (max-width: 1025px) {
+    .carousel-inner center img {
+        width: 80%;
+        height: 30%;
+    }
+
+    .carousel-inner .carousel-item .carousel-caption h1 {
+        font-size: 4vw;
+    }
+
+    .carousel-inner .carousel-item .carousel-caption h4 {
+        font-size: 1.6vw;
+    }
+
+    .greetings h3 {
+        text-align: center;
+        font-size: 2.9vw;
+    }
+
+    .greetings h4 {
+        font-size: 1.5vw;
+    }
+
+    .decOR::after,.decOR::before{
+        width: 11vw;
+    }
+}
+
+/* ------ Media Querry (For Size 768px)------ */
+@media only screen and (max-width: 769px) {
+    .carousel-inner center img {
+        width: 90%;
+        height: 70%;
+    }
+
+    .carousel-inner .carousel-item .carousel-caption{
+        margin-top: 2% !important;
+    }
+
+    .carousel-inner .carousel-item .carousel-caption h1 {
+        font-size: 6vw;
+    }
+
+    .carousel-inner .carousel-item .carousel-caption h4 {
+        font-size: 2vw;
+    }
+
+    .greetings h3 {
+        text-align: center;
+        font-size: 2.9vw;
+    }
+
+    .greetings h4 {
+        font-size: 1.5vw;
+    }
+
+    .sbtn{
+        padding: 4% !important;
+        font-size: 2vw;
+        margin-bottom: 5% !important;
+    }
+
+    .decOR,
+    .decOR::after,
+    .decOR::before {
+        margin-top: 2% !important;
+    }
+
+    .decOR::after,.decOR::before{
+        width: 10vw;
+    }
+
+    .glbtn {
+        margin: 1% !important;
+    }
+
+    .glbtn i {
+        font-size: 3vw;
+    }
+
+    .glbtn a {
+        margin-left: 15% !important;
+        font-size: 1.8vw;
+        font-weight: 700;
+    }
+
+    .loginSection{
+        margin-top: 15% !important;
+    }
+
+    .loginSection p {
+         font-size: 1.8vw;
+    }
+
+    .loginSection p a{
+        font-size: 2.5vw;
+    }
+
+    .loginSection p a:hover{
+        font-size: 3vw;
+    }
+}
+
+/* ------Media Querry(For 425px)------ */
+@media only screen and (max-width: 426px){
+     .carousel-inner center img {
+         width: 100%;
+         height: 90%;
+         margin-top: 50%;
+         margin-bottom: 0;
+     }
+
+     .carousel-inner .carousel-item .carousel-caption {
+         margin-top: 1% !important;
+     }
+
+     .carousel-inner .carousel-item .carousel-caption h1 {
+         font-size: 10vw;
+     }
+
+     .carousel-inner .carousel-item .carousel-caption h4 {
+         font-size: 4vw;
+     }
+
+    .carousel-indicators li {
+        width: 5vw;
+        height: 5vw;
+        border-radius: 50%;
+    }
+
+    .greetings h3 {
+        font-size: 6vw;
+    }
+
+    .greetings h4 {
+        font-size: 3vw;
+    }
+
+    .input-group #userid::placeholder,
+    .input-group #usermail::placeholder,
+    .input-group #userpass::placeholder {
+        font-size: 3vw;
+    }
+
+    .sbtn {
+        padding: 4% !important;
+        font-size: 3vw;
+        margin-bottom: 5% !important;
+    }
+
+    .decOR,
+    .decOR::after,
+    .decOR::before {
+        font-size: 4vw;
+        margin-top: 0 !important;
+    }
+
+    .decOR::after,
+    .decOR::before {
+        width: 40vw;
+    }
+
+    .glbtn {
+        margin: 1% !important;
+    }
+
+    .glbtn i {
+        font-size: 6vw;
+    }
+
+    .glbtn a {
+        margin-left: 15% !important;
+        font-size: 3vw;
+        font-weight: 700;
+    }
+
+    .loginSection {
+        margin-top: 15% !important;
+    }
+
+    .loginSection p {
+        font-size: 3vw;
+    }
+
+    .loginSection p a {
+        font-size: 5vw;
+    }
+
+    .loginSection p a:hover {
+        font-size: 6vw;
+    }
+
+}
+
+/* ------Media Querry(For 320px)------ */
+@media only screen and (max-width: 321px){
+     .carousel-inner center img {
+         width: 120%;
+         height: 100%;
+         margin-top: 50%;
+         margin-bottom: 0;
+     }
+     .carousel-inner .carousel-item .carousel-caption h1 {
+         font-size: 15vw;
+     }
+
+     .carousel-inner .carousel-item .carousel-caption h4 {
+         font-size: 5vw;
+     }
+}
