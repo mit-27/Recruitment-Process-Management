@@ -28,6 +28,11 @@ achieve by this project.
    You can create Recruiter and Admin accounts by entering details in user table and specify their roles in u_role Column.
 5. That's all you need to do. Now Enjoy!
 
+## Screenshots
+
+   ![s1](https://user-images.githubusercontent.com/63452683/96695058-d4c34d00-13a6-11eb-9822-e07644b5a015.PNG)
+   ![s2](https://user-images.githubusercontent.com/63452683/96695110-e60c5980-13a6-11eb-8571-4e9f8d9e5c37.PNG)
+   ![s3](https://user-images.githubusercontent.com/63452683/96695152-f1f81b80-13a6-11eb-948c-f00cae7f2c07.PNG)
 
 ## Technologies
 
