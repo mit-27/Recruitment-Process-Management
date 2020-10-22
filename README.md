@@ -38,3 +38,7 @@ achieve by this project.
 
 * CodeIgniter (PHP Web Framework)
 * Mysql Database
+
+## Contributors
+1. Mit Suthar
+2. Dhruvil Parmar
